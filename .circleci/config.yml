@@ -6,7 +6,7 @@ jobs:
     executor:
       name: node/default
     docker:
-      - image: circleci/node:8.0.0
+      - image: circleci/node:10-browsers
         environment:
           CHROME_BIN: "/usr/bin/google-chrome"
     steps:
