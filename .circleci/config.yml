@@ -5,6 +5,10 @@ jobs:
   build-and-test:
     executor:
       name: node/default
+    docker:
+      - image: circleci/node:6
+        environment:
+          CHROME_BIN: "/usr/bin/google-chrome"
     steps:
       - checkout
       - node/with-cache:
